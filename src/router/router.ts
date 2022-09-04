@@ -4,7 +4,7 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/',
     name: 'Home',
-    component: () => import('@/view/home/home.vue') // 注意这里要带上 文件后缀.vue
+    component: () => import('@/view/home/home.vue')
   },
   {
     path: '/magicMenu-01',
