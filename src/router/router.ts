@@ -23,6 +23,18 @@ const routes: RouteRecordRaw[] = [
     name: 'DynamicMenu01',
     component: () => import('@/view/DynamicMenu/DynamicMenu-01.vue'),
     meta: { title: '动感菜单 | 01' }
+  },
+  {
+    path: '/magicIcon-01',
+    name: 'MagicIcon01',
+    component: () => import('@/view/MagicIcon/MagicIcon-01.vue'),
+    meta: { title: '魔术图标 | 01' }
+  },
+  {
+    path: '/colorfulButton-01',
+    name: 'ColorfulButton01',
+    component: () => import('@/view/ColorfulButton/ColorfulButton-01.vue'),
+    meta: { title: '炫彩按钮 | 01' }
   }
 ]
 

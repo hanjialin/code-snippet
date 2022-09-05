@@ -42,6 +42,34 @@
             </template>
           </n-card>
         </n-gi>
+        <n-gi>
+          <n-card :content-style="{ padding: '15px', borderTop: '1px solid #efeff5' }">
+            <template #cover>
+              <img src="/src/assets/img/magicicon/01.png" />
+            </template>
+            魔术图标-01
+            <template #action>
+              <div style="display: flex; justify-content: right">
+                <n-button tag="a" href="/magicIcon-01" strong size="small"> 查看示例 </n-button>
+              </div>
+            </template>
+          </n-card>
+        </n-gi>
+        <n-gi>
+          <n-card :content-style="{ padding: '15px', borderTop: '1px solid #efeff5' }">
+            <template #cover>
+              <img src="/src/assets/img/colorfulbutton/01.png" />
+            </template>
+            炫彩按钮-01
+            <template #action>
+              <div style="display: flex; justify-content: right">
+                <n-button tag="a" href="/colorfulButton-01" strong size="small">
+                  查看示例
+                </n-button>
+              </div>
+            </template>
+          </n-card>
+        </n-gi>
       </n-grid>
     </div>
   </div>
