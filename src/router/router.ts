@@ -19,6 +19,12 @@ const routes: RouteRecordRaw[] = [
     meta: { title: '魔术菜单 | 02' }
   },
   {
+    path: '/magicMenu-03',
+    name: 'MagicMenu03',
+    component: () => import('@/view/MagicMenu/MagicMenu-03.vue'),
+    meta: { title: '魔术菜单 | 03' }
+  },
+  {
     path: '/dynamicMenu-01',
     name: 'DynamicMenu01',
     component: () => import('@/view/DynamicMenu/DynamicMenu-01.vue'),
