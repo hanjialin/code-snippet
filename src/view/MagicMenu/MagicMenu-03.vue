@@ -90,7 +90,7 @@ export default defineComponent({
 .navigation .toggle span {
   width: 25px;
   height: 4px;
-  background: #0575e6;
+  background: linear-gradient(45deg, #0575e6, #91c3ff);
   border-radius: 2px;
   position: absolute;
   transition: 0.5s;
@@ -134,6 +134,9 @@ export default defineComponent({
   text-align: center;
   font-size: 1rem;
   letter-spacing: 0.05rem;
+}
+.navigation ul li a:hover {
+  font-weight: bold;
 }
 .navigation.open {
   width: 420px;

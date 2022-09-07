@@ -32,7 +32,7 @@
         <n-gi>
           <n-card :content-style="{ padding: '15px', borderTop: '1px solid #efeff5' }">
             <template #cover>
-              <img src="/src/assets/img/magicmenu/02.png" />
+              <img src="/src/assets/img/magicmenu/03.png" />
             </template>
             魔术菜单-03
             <template #action>
@@ -83,6 +83,19 @@
             </template>
           </n-card>
         </n-gi>
+        <n-gi>
+          <n-card :content-style="{ padding: '15px', borderTop: '1px solid #efeff5' }">
+            <template #cover>
+              <img src="/src/assets/img/magiccard/01.png" />
+            </template>
+            魔术卡片-01
+            <template #action>
+              <div style="display: flex; justify-content: right">
+                <n-button tag="a" href="/magicCard-01" strong size="small"> 查看示例 </n-button>
+              </div>
+            </template>
+          </n-card>
+        </n-gi>
       </n-grid>
     </div>
   </div>
@@ -96,11 +109,12 @@
   line-height: 4rem;
   font-size: 1.5rem;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
   border-bottom: 1px solid #dadade;
-  background-color: rgba(66, 185, 131, 0.7);
+  //background-color: rgba(66, 185, 131, 0.7);
+  background: linear-gradient(45deg, #fc5c9c, #c5e3f6, #fccde2, #fcefee);
   box-sizing: border-box;
   padding: 0 20px;
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
 }
 </style>
