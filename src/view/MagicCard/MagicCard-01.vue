@@ -43,7 +43,7 @@
       </svg>
       <div class="filter">
         <div class="avatar">
-          <img width="100" height="100" src="src/assets/img/utils/avatar.png" alt="" />
+          <img width="100" height="100" :src="avatar" alt="" />
         </div>
         <div class="title">魔术卡片01</div>
         <div class="name">爱琨琨爱硕硕</div>
@@ -56,14 +56,16 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
 import { useMeta } from 'vue-meta'
-
+import avatar from '@/assets/img/utils/avatar.png'
 export default defineComponent({
   name: 'MagicCard01',
   setup() {
     useMeta({
       title: '魔术卡片 - 01'
     })
-    return {}
+    return {
+      avatar
+    }
   }
 })
 </script>
