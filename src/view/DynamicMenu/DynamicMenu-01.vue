@@ -46,11 +46,11 @@ export default defineComponent({
   name: 'DynamicMenu01',
   setup() {
     useMeta({
-      title: '动感菜单 - 01',
+      title: '灵动菜单 - 01',
       htmlAttrs: { lang: 'zh-cn', amp: true }
     })
     const active = ref(0)
-    const handle = function (index) {
+    const handle = function (index: any) {
       active.value = index
     }
     return {

@@ -45,9 +45,22 @@
         <n-gi>
           <n-card :content-style="{ padding: '15px', borderTop: '1px solid #efeff5' }">
             <template #cover>
+              <img src="/src/assets/img/magicmenu/04.png" />
+            </template>
+            魔术菜单-04
+            <template #action>
+              <div style="display: flex; justify-content: right">
+                <n-button tag="a" href="/magicMenu-04" strong size="small"> 查看示例 </n-button>
+              </div>
+            </template>
+          </n-card>
+        </n-gi>
+        <n-gi>
+          <n-card :content-style="{ padding: '15px', borderTop: '1px solid #efeff5' }">
+            <template #cover>
               <img src="/src/assets/img/dynamicmenu/01.png" />
             </template>
-            动感菜单-01
+            灵动菜单-01
             <template #action>
               <div style="display: flex; justify-content: right">
                 <n-button tag="a" href="/dynamicMenu-01" strong size="small"> 查看示例 </n-button>
