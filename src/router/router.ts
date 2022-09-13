@@ -53,6 +53,12 @@ const routes: RouteRecordRaw[] = [
     name: 'MagicCard01',
     component: () => import('@/view/MagicCard/MagicCard-01.vue'),
     meta: { title: '魔术卡片 | 01' }
+  },
+  {
+    path: '/magicCard-02',
+    name: 'MagicCard02',
+    component: () => import('@/view/MagicCard/MagicCard-02.vue'),
+    meta: { title: '魔术卡片 | 02' }
   }
 ]
 

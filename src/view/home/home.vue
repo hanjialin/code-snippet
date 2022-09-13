@@ -109,6 +109,19 @@
             </template>
           </n-card>
         </n-gi>
+        <n-gi>
+          <n-card :content-style="{ padding: '15px', borderTop: '1px solid #efeff5' }">
+            <template #cover>
+              <img src="/src/assets/img/magiccard/02.png" />
+            </template>
+            魔术卡片-02
+            <template #action>
+              <div style="display: flex; justify-content: right">
+                <n-button tag="a" href="/magicCard-02" strong size="small"> 查看示例 </n-button>
+              </div>
+            </template>
+          </n-card>
+        </n-gi>
       </n-grid>
     </div>
   </div>
