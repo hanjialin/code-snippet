@@ -21,7 +21,6 @@ export default defineComponent({
   }
 })
 </script>
-
 <style lang="scss" scoped>
 .fixed {
   position: fixed;
