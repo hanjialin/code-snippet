@@ -1,6 +1,7 @@
 import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { createHtmlPlugin } from 'vite-plugin-html'
+// import { createHtmlPlugin } from 'vite-plugin-html'
+import vitePluginHtmlEnv from 'vite-plugin-html-env'
 import Components from 'unplugin-vue-components/vite'
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 // @ts-ignore
@@ -15,26 +16,8 @@ export default (mode: string) =>
       Components({
         resolvers: [NaiveUiResolver()]
       }),
-      createHtmlPlugin({
-        minify: true,
-        inject: {
-          data: {
-            title: loadEnv(mode, process.cwd()).VITE_APP_TITLE
-          }
-        }
-        /**
-         * 在这里写entry后，你将不需要在`index.html`内添加 script 标签，原有标签需要删除
-         * @default src/main.ts
-         */
-        //entry: 'src/main.ts',
-        /**
-         * 如果你想将 `index.html`存放在指定文件夹，可以修改它，否则不需要配置
-         * @default index.html
-         */
-        //template: 'public/index.html',
-        /**
-         * 需要注入 index.html ejs 模版的数据
-         */
+      vitePluginHtmlEnv({
+        compress: true
       })
       /*viteCompression({
       verbose: true,
