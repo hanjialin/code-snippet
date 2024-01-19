@@ -6,7 +6,7 @@
         <n-gi>
           <n-card :content-style="{ padding: '15px', borderTop: '1px solid #efeff5' }">
             <template #cover>
-              <img src="/src/assets/img/magicmenu/1.apng" />
+              <img src="/src/assets/img/magicmenu/1.png" />
             </template>
             魔术菜单-01
             <template #action>
@@ -19,7 +19,7 @@
         <n-gi>
           <n-card :content-style="{ padding: '15px', borderTop: '1px solid #efeff5' }">
             <template #cover>
-              <img src="/src/assets/img/magicmenu/2.apng" />
+              <img src="/src/assets/img/magicmenu/2.png" />
             </template>
             魔术菜单-02
             <template #action>
@@ -32,7 +32,7 @@
         <n-gi>
           <n-card :content-style="{ padding: '15px', borderTop: '1px solid #efeff5' }">
             <template #cover>
-              <img src="/src/assets/img/magicmenu/3.apng" />
+              <img src="/src/assets/img/magicmenu/3.png" />
             </template>
             魔术菜单-03
             <template #action>
@@ -45,7 +45,7 @@
         <n-gi>
           <n-card :content-style="{ padding: '15px', borderTop: '1px solid #efeff5' }">
             <template #cover>
-              <img src="/src/assets/img/magicmenu/4.apng" />
+              <img src="/src/assets/img/magicmenu/4.png" />
             </template>
             魔术菜单-04
             <template #action>
@@ -58,7 +58,7 @@
         <n-gi>
           <n-card :content-style="{ padding: '15px', borderTop: '1px solid #efeff5' }">
             <template #cover>
-              <img src="/src/assets/img/dynamicmenu/1.apng" />
+              <img src="/src/assets/img/dynamicmenu/1.png" />
             </template>
             灵动菜单-01
             <template #action>
@@ -71,7 +71,7 @@
         <n-gi>
           <n-card :content-style="{ padding: '15px', borderTop: '1px solid #efeff5' }">
             <template #cover>
-              <img src="/src/assets/img/magicicon/1.apng" />
+              <img src="/src/assets/img/magicicon/1.png" />
             </template>
             魔术图标-01
             <template #action>
@@ -84,7 +84,7 @@
         <n-gi>
           <n-card :content-style="{ padding: '15px', borderTop: '1px solid #efeff5' }">
             <template #cover>
-              <img src="/src/assets/img/colorfulbutton/1.apng" />
+              <img src="/src/assets/img/colorfulbutton/1.png" />
             </template>
             炫彩按钮-01
             <template #action>
