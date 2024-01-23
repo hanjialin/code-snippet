@@ -49,6 +49,12 @@ const routes: RouteRecordRaw[] = [
     meta: { title: '炫彩按钮 | 01' }
   },
   {
+    path: '/colorfulButton-02',
+    name: 'ColorfulButton02',
+    component: () => import('@/view/ColorfulButton/ColorfulButton-02.vue'),
+    meta: { title: '炫彩按钮 | 02' }
+  },
+  {
     path: '/magicCard-01',
     name: 'MagicCard01',
     component: () => import('@/view/MagicCard/MagicCard-01.vue'),

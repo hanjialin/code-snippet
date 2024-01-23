@@ -6,7 +6,7 @@
         <n-gi>
           <n-card :content-style="{ padding: '15px', borderTop: '1px solid #efeff5' }">
             <template #cover>
-              <img src="/src/assets/img/magicmenu/1.png" />
+              <img src="/src/assets/img/magicmenu/1.png" alt="" />
             </template>
             魔术菜单-01
             <template #action>
@@ -90,6 +90,21 @@
             <template #action>
               <div style="display: flex; justify-content: right">
                 <n-button tag="a" href="/colorfulButton-01" strong size="small">
+                  查看示例
+                </n-button>
+              </div>
+            </template>
+          </n-card>
+        </n-gi>
+        <n-gi>
+          <n-card :content-style="{ padding: '15px', borderTop: '1px solid #efeff5' }">
+            <template #cover>
+              <img src="/src/assets/img/colorfulbutton/2.png" />
+            </template>
+            炫彩按钮-02
+            <template #action>
+              <div style="display: flex; justify-content: right">
+                <n-button tag="a" href="/colorfulButton-02" strong size="small">
                   查看示例
                 </n-button>
               </div>
