@@ -4,6 +4,7 @@ import vue from '@vitejs/plugin-vue'
 import vitePluginHtmlEnv from 'vite-plugin-html-env'
 import Components from 'unplugin-vue-components/vite'
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
+
 // @ts-ignore
 import path from 'path'
 // import viteCompression from 'vite-plugin-compression'

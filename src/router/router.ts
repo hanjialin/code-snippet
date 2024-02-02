@@ -65,6 +65,18 @@ const routes: RouteRecordRaw[] = [
     name: 'MagicCard02',
     component: () => import('@/view/MagicCard/MagicCard-02.vue'),
     meta: { title: '魔术卡片 | 02' }
+  },
+  {
+    path: '/magicRolling-01',
+    name: 'MagicRolling01',
+    component: () => import('@/view/MagicRolling/MagicRolling-01.vue'),
+    meta: { title: '魔术滚动 | 01' }
+  },
+  {
+    path: '/magicTheme-01',
+    name: 'MagicTheme01',
+    component: () => import('@/view/MagicTheme/RoundTheme.vue'),
+    meta: { title: '魔术主题 | 01' }
   }
 ]
 

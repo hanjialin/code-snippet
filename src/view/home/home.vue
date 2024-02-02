@@ -153,9 +153,18 @@
   letter-spacing: 0.1rem;
   border-bottom: 1px solid #dadade;
   //background-color: rgba(66, 185, 131, 0.7);
-  background: linear-gradient(45deg, #fc5c9c, #c5e3f6, #fccde2, #fcefee);
+
   box-sizing: border-box;
   padding: 0 20px;
   color: rgba(255, 255, 255, 1);
+  animation: colorTrans 1s ease-in-out infinite;
+}
+@keyframes colorTrans {
+  0% {
+    background: linear-gradient(45deg, #fcefee, #fc5c9c, #c5e3f6, #fccde2, #fcefee);
+  }
+  100% {
+    background: linear-gradient(45deg, #fc5c9c, #c5e3f6, #fccde2, #fcefee, #fc5c9c);
+  }
 }
 </style>
