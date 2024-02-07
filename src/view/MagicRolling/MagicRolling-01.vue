@@ -5,7 +5,7 @@
     }}</template>
   </metainfo>
   <div class="main">
-    <div ref="number" class="number-rolling" style="color: #fff"></div>
+    <div class="number-rolling" style="color: #fff">{{ number }}</div>
   </div>
   <n-button strong class="fixed" tag="a" href="/">返回首页</n-button>
 </template>
@@ -13,7 +13,6 @@
 <script setup lang="ts">
 import { useMeta } from 'vue-meta'
 import { ref } from 'vue'
-
 useMeta({
   title: '魔术滚动 - 01',
   htmlAttrs: { lang: 'zh-cn', amp: true }
@@ -37,9 +36,10 @@ interface IProps {
   rank: number //总位数
   duration: number //滚动时间
 }
-const number = ref()
+const number = ref('')
 const fn = (params: IProps) => {
   const { from, to, rank, duration } = params
+  number.value = ''.toString().padStart(rank, '0')
   //根据位数生成为数字符串
   const initStr = 0
   const numFn = () => {
@@ -47,14 +47,15 @@ const fn = (params: IProps) => {
     const elapsedTime = Math.min(current - startTime, duration)
     const initStr = from + Number(((to - from) * easeOut(elapsedTime / duration)).toFixed(0))
     if (initStr <= to) {
-      number.value.innerHTML = initStr.toString().padStart(rank, '0')
+      number.value = initStr.toString().padStart(rank, '0')
       requestAnimationFrame(numFn)
     }
   }
   requestAnimationFrame(numFn)
 }
 const startTime = performance.now()
-fn({ from: 0, to: 961, rank: 5, duration: 2000 })
+fn({ from: 0, to: 961, rank: 6, duration: 2000 })
+
 // requestAnimationFrame(fn({ num: 961, rank: 5, duration: 3500 }))
 </script>
 
